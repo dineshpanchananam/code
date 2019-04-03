@@ -1,0 +1,8 @@
+**/*.pyc
+**/venv
+**/env
+**/snapshots
+.DS_Store
+**/.idea
+*.db
+**/.pytest_cache

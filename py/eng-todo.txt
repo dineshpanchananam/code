@@ -1,0 +1,15 @@
+decorators
+git
+pytest/faker/mock
+sqlalchemy
+alembic
+git tags?
+jwt
+cookies
+sessionsbash
+factory_boy
+client_id
+client_secret
+ssl
+ssh
+snapshottest

@@ -1,0 +1,39 @@
+null_value: null
+key with spaces: spaces
+"what the: fuck": fuck
+fucked up block: | 
+  what
+  the hell 
+  do you think
+    of me
+      huh?
+                what? 
+
+another messed up: >
+  this entire block
+  to hell with it
+  
+  only this is new
+  
+    more intented -
+    too 'good'
+
+spring:
+  version: 4.3.0
+  data-source:
+    host: http://localhost
+    port: 8080
+    timeout: 1000
+    
+? |
+  a key with
+  2 lines
+: value
+
+0.35: a float key
+'true': 'false'
+
+? |
+  - man utd
+  - real madrid
+: ["2", "4"]

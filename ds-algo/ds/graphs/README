@@ -1,0 +1,49 @@
+Execution: python graph_test.py
+
+
+Edges
++----+--+
+|from|to|
++----+--+
+|   u| v|
+|   v| y|
+|   y| x|
+|   u| x|
+|   x| v|
+|   w| y|
+|   w| z|
+|   z| z|
++----+--+
+
+BFS Results
++------+-----------+--------+-----------+
+|Source|Destination|Distance|Predecessor|
++------+-----------+--------+-----------+
+|     u|          u|       0|       None|
+|     u|          w|infinity|       None|
+|     u|          v|       1|          u|
+|     u|          y|       2|          v|
+|     u|          x|       1|          u|
+|     u|          z|infinity|       None|
++------+-----------+--------+-----------+
+BFS Tree: u->v, u->x, v->y
+
+DFS Results
++------+--------------+--------------+
+|Vertex|Discovery Time|Finishing Time|
++------+--------------+--------------+
+|     u|             1|             8|
+|     v|             2|             7|
+|     y|             3|             6|
+|     x|             4|             5|
+|     w|             9|            12|
+|     z|            10|            11|
++------+--------------+--------------+
++-------------------+----------------------+
+|Edge Classification|                 Edges|
++-------------------+----------------------+
+|         Tree Edges|u->v, v->y, y->x, w->z|
+|         Back Edges|            x->v, z->z|
+|      Forward Edges|                  u->x|
+|        Cross Edges|                  w->y|
++-------------------+----------------------+
